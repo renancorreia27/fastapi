@@ -1,7 +1,7 @@
-from fastapi import FastAPI
+from fastapi import FastAPI 
 
 app = FastAPI()
 
-@app.get("/")
+@app.get("/") #Suporta requisições demoradas (banco de dados)
 async def root():
     return {"message": "Hello World"}
